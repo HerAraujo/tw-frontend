@@ -8,7 +8,7 @@ function Welcome() {
     <div className="package">
       <div className="hidden-footer">
         <span className="label-group">
-          Made by: Florencia Biazzi, Hernán Araújo and Luis Álvarez.
+          Made by: Hernán Araújo.
         </span>
       </div>
       <div className="left-side">
@@ -51,7 +51,7 @@ function Welcome() {
         <TryDemo />
         <div className="label-to-hide mt-auto">
           <span className="label-group">
-            Made by: Florencia Biazzi, Hernán Araújo and Luis Álvarez.
+            Made by: Hernán Araújo.
           </span>
         </div>
       </div>

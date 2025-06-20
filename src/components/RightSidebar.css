@@ -1,0 +1,98 @@
+.r-sidebar-search-input {
+  border-style: none;
+  font-size: small;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #eff4f8;
+}
+.r-sidebar-search-input:hover {
+  border-style: solid;
+  border-width: thin;
+  background-image: none;
+}
+.r-sidebar-search-input:focus {
+  background-image: none;
+}
+.r-sidebar-search-input:focus::placeholder {
+  color: transparent;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(29, 155, 240);
+}
+.r-sidebar-trends {
+  padding: 1rem 0;
+  margin-top: 1rem;
+  text-align: left;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+}
+.r-sidebar-trends-label,
+.r-sidebar-follow-label {
+  font-weight: bolder;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: larger;
+  padding: 1rem 2rem;
+}
+.r-sidebar-trends-list {
+  padding: 0.5rem 2rem 0 2rem;
+}
+.r-sidebar-trends-show {
+  padding: 0.5rem 2rem;
+  color: rgb(29, 155, 240);
+  font-size: medium;
+  cursor: pointer;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.r-sidebar-trends-show:hover {
+  background-color: #eff4f8;
+}
+.r-sidebar-follow {
+  text-align: left;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+.r-sidebar-footer {
+  padding: 1rem 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.r-sidebar-footer > div > *,
+.r-sidebar-footer > * {
+  text-decoration: none;
+  color: #6c757d;
+  font-size: small;
+  margin-right: 10px;
+}
+.r-sidebar-dots-items {
+  width: 10px;
+  height: 10px;
+  margin-left: 15px;
+}
+.r-sidebar-title-list {
+  font-size: small;
+  font-weight: bold;
+}
+.r-sidebar-hidden1,
+.r-sidebar-hidden2 {
+  display: block;
+}
+.r-sidebar-tags-list {
+  color: rgb(83, 100, 113);
+  font-size: small;
+}
+.r-sidebar-ul {
+  list-style: none;
+  text-align: left;
+}
+.r-sidebar-follow-suggestion {
+  padding: 0.5rem 2rem;
+}

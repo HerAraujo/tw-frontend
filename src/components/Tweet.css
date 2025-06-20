@@ -1,0 +1,104 @@
+.user-photo {
+  width: 60px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  max-width: 100%;
+}
+.tweet-card {
+  border: 1px rgba(165, 164, 164, 0.178) solid;
+}
+.btn-transparent {
+  background-color: transparent;
+  border: none;
+}
+.icons {
+  color: rgb(133, 126, 126) !important;
+  width: 30px;
+  height: 30px;
+}
+.icons-number {
+  color: rgb(133, 126, 126) !important;
+}
+
+.icons.comment:hover {
+  border-radius: 50%;
+  background-color: #69b0d12c;
+}
+.icons.comment:hover i {
+  color: rgb(105, 176, 209);
+}
+
+.icons.share:hover {
+  border-radius: 50%;
+  background-color: rgba(105, 176, 209, 0.171);
+}
+.icons.share:hover i {
+  color: rgb(105, 176, 209);
+}
+
+.icons.retweet:hover {
+  border-radius: 50%;
+  background-color: rgba(105, 209, 105, 0.171);
+}
+.icons.retweet:hover i {
+  color: rgb(105, 209, 105);
+}
+
+.icons.like:hover {
+  border-radius: 50%;
+  background-color: rgba(223, 59, 59, 0.171);
+}
+.icons.like:hover i {
+  color: rgb(223, 59, 59);
+}
+input {
+  border: none;
+  outline: 0;
+}
+.sidebar {
+  height: 100%;
+}
+.navbar-icon {
+  color: black;
+  width: 30px;
+}
+
+.navbar-links:hover {
+  background-color: rgba(165, 164, 164, 0.178);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.logo:hover {
+  border-radius: 50%;
+  background-color: rgba(105, 176, 209, 0.171);
+}
+.profile-image-background {
+  background-image: url("https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg");
+  background-size: cover;
+  padding-bottom: 40%;
+}
+.user-profile-photo {
+  border-radius: 50%;
+  border: solid 4px white;
+  position: relative;
+  bottom: 60%;
+  margin-bottom: -2rem;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.words-distance {
+  margin-bottom: -0.2rem;
+}
+.profile-btn {
+  border-radius: 0%;
+}
+.profile-btn:hover {
+  background-color: lightgray;
+}
+.red-heart {
+  color: red;
+}

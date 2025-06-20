@@ -1,0 +1,21 @@
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  height: 70px;
+  border-top: 1px rgba(165, 164, 164, 0.178) solid;
+}
+.bottom-navbar-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.bottom-navbar-new-tweet {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
+}

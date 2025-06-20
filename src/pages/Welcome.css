@@ -1,0 +1,136 @@
+.package {
+  display: flex;
+}
+
+.left-side {
+  display: flex;
+  background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_850x623.png");
+  height: 100vh;
+  width: 55%;
+  align-items: center;
+  justify-content: center;
+}
+.right-side {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 2rem;
+}
+.white-bird {
+  font-size: 20rem;
+}
+
+.blue-bird {
+  color: rgb(29, 155, 240);
+}
+
+.slogan {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: black;
+  width: 100%;
+  height: 100px;
+}
+.slogan2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: inherit;
+  color: black;
+}
+
+.label {
+  font-size: x-large;
+  font-weight: bolder;
+}
+.welcome-page-btn {
+  width: 60%;
+  height: auto;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.startBtn1 {
+  border-style: none;
+  border-radius: 2rem;
+  height: 50px;
+  font-weight: bold;
+  background-color: rgb(29, 155, 240);
+}
+
+.startBtn2 {
+  border-style: none;
+  height: 50px;
+  border-radius: 2rem;
+  font-weight: bold;
+  border: solid;
+  border-width: thin;
+  border-color: rgb(207, 217, 222);
+}
+.startBtn3 {
+  border-style: none;
+  height: 50px;
+  border-radius: 2rem;
+  font-weight: bold;
+  border: solid;
+  border-width: thin;
+  color: white;
+  background-color: #212121;
+}
+
+.term-policy {
+  font-size: x-small;
+  color: dimgray;
+  width: 60%;
+}
+
+.btn-width {
+  padding-right: 4rem;
+  margin-right: 4rem;
+}
+
+.hidden-footer {
+  display: none;
+}
+.label-to-hide {
+  padding-top: 4rem;
+  font-size: small;
+  color: dimgray;
+}
+
+@media (max-width: 850px) {
+  .package {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .left-side {
+    width: 100%;
+    background-size: cover;
+    height: 25%;
+  }
+  .right-side {
+    width: 100%;
+    gap: 1rem;
+  }
+  .white-bird {
+    font-size: 10rem;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .hidden-footer {
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .label-group {
+    font-size: small;
+    color: dimgray;
+  }
+  .label-to-hide {
+    display: none;
+  }
+}

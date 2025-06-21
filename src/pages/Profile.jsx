@@ -29,9 +29,14 @@ function Profile() {
   let params = useParams();
   const getUser = async () => {
     try {
-      const response = await axios({
-        url: `${process.env.REACT_APP_URL}api/users/${params.username}`,
-      });
+      const response = await axios(
+        {
+          url: `${process.env.REACT_APP_URL}api/users/${params.username}`,
+        },
+        {
+          withCredentials: true,
+        }
+      );
       setUser(response.data);
       setFollowers(response.data.followers.length);
       response.data.followers.includes(loggedUser?.id)
@@ -45,9 +50,14 @@ function Profile() {
   useEffect(() => {
     const getTweets = async () => {
       try {
-        const response = await axios({
-          url: `${process.env.REACT_APP_URL}api/tweets/${params.username}`,
-        });
+        const response = await axios(
+          {
+            url: `${process.env.REACT_APP_URL}api/tweets/${params.username}`,
+          },
+          {
+            withCredentials: true,
+          }
+        );
         if (response.status === 200) {
           setTweets(response.data.tweets);
         }
@@ -169,6 +179,13 @@ function Profile() {
                 </div>
               </div>
               <Tweets tweets={updatedTweets} />
+              {/* {updatedTweets.length === 0 ? (
+                <div className="text-center text-muted mt-4">
+                  Este usuario todavía no ha publicado ningún tweet.
+                </div>
+              ) : (
+                <Tweets tweets={updatedTweets} />
+              )} */}
             </div>
 
             <div className="col-lg-3 d-none d-lg-inline-block right-sidebar">

@@ -22,6 +22,9 @@ function BottomNavbar() {
       try {
         const response = await axios.get(
           `${process.env.REACT_APP_URL}api/users/${user?.username}`
+          , {
+            withCredentials: true
+          }
         );
         if (response.status === 200) setUserInfo(response.data);
       } catch (error) {

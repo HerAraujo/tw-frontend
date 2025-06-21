@@ -17,6 +17,9 @@ function TryDemo() {
           username: "user",
           password: "user",
         },
+      },
+      {
+        withCredentials: true,
       });
 
       dispatch(logIn(response.data.user));

@@ -25,6 +25,9 @@ function Home() {
         const response = await axios({
           url: `${process.env.REACT_APP_URL}api/tweets/following/${store.user.id}`,
           headers: { Authorization: `Bearer ${store.user.accessToken}` },
+        },
+        {
+          withCredentials: true
         });
         setTweets(response.data.tweets);
       } catch (error) {

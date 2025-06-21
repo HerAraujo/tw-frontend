@@ -27,6 +27,9 @@ function Register() {
           email: email,
           password: password,
         },
+      },
+      {
+        withCredentials: true
       });
 
       setEmail("");

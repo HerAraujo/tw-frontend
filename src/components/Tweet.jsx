@@ -14,6 +14,9 @@ function Tweet({ tweet }) {
         method: "DELETE",
         url: `${process.env.REACT_APP_URL}api/tweets/${tweet._id}`,
         headers: { Authorization: `Bearer ${user.accessToken}` },
+      },
+      {
+        withCredentials: true,
       });
       console.log(response);
       dispatch(removeTweet(tweet));

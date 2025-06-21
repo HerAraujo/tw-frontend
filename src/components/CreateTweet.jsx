@@ -19,6 +19,9 @@ function CreateTweet({ handleClose }) {
       try {
         const response = await axios({
           url: `${process.env.REACT_APP_URL}api/users/${user.username}`,
+        },
+        {
+          withCredentials: true,
         });
         setLoggedUser(response.data);
       } catch (error) {
@@ -39,6 +42,9 @@ function CreateTweet({ handleClose }) {
         data: {
           content: content,
         },
+      },
+      {
+        withCredentials: true
       });
 
       setContent("");

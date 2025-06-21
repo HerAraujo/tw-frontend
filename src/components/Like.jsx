@@ -16,6 +16,8 @@ function Like({ tweet, user }) {
             method: "DELETE",
             url: `${process.env.REACT_APP_URL}api/tweets/like/${tweet._id}`,
             headers: { Authorization: `Bearer ${user.accessToken}` },
+          },{
+            withCredentials: true
           });
           distpatch(unlike(tweet, user));
         } catch (error) {
@@ -27,6 +29,9 @@ function Like({ tweet, user }) {
             method: "POST",
             url: `${process.env.REACT_APP_URL}api/tweets/like/${tweet._id}`,
             headers: { Authorization: `Bearer ${user.accessToken}` },
+          }
+        ,{
+            withCredentials: true
           });
           distpatch(like(tweet, user));
         } catch (error) {

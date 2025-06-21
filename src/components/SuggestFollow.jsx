@@ -11,7 +11,9 @@ function SuggestFollow() {
 
   const getUsers = async () => {
     try {
-      const { data } = await axios.get(`${process.env.REACT_APP_URL}api/users`);
+      const { data } = await axios.get(`${process.env.REACT_APP_URL}api/users`, {
+        withCredentials: true,
+      });
       setUsers(data);
     } catch (error) {
       return alert("Sorry something went wrong, please try again later");

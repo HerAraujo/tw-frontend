@@ -13,7 +13,10 @@ function UserPill() {
     const getUser = async () => {
       try {
         const { data } = await axios.get(
-          `${process.env.REACT_APP_URL}api/users/${user?.username}`
+          `${process.env.REACT_APP_URL}api/users/${user?.username}`,
+          {
+            withCredentials: true,
+          }
         );
         setUserInfo(data);
       } catch (error) {

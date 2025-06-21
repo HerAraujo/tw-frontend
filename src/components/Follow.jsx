@@ -11,12 +11,18 @@ function Follow() {
     try {
       const response = await axios({
         url: `${process.env.REACT_APP_URL}api/users/${params.username}`,
+      },
+      {
+        withCredentials: true
       });
 
       await axios({
         method: "POST",
         url: `${process.env.REACT_APP_URL}api/users/follow/${response.data._id}`,
         headers: { Authorization: `Bearer ${store.user.accessToken}` },
+      }
+      , {
+        withCredentials: true
       });
     } catch (error) {
       return alert("Sorry something went wrong, please try again later");

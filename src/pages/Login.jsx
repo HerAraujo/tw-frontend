@@ -22,6 +22,9 @@ function Login() {
           username: username,
           password: password,
         },
+      },
+      {
+        withCredentials: true
       });
 
       dispatch(logIn(response.data.user));

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import LogoutModal from "./LogoutModal";
 import axios from "axios";
 import "./UserPill.css";
+import { fixImageUrl } from "../utils/fixImageURL";
 
 function UserPill() {
   const user = useSelector((state) => state.user);
@@ -35,7 +36,7 @@ function UserPill() {
         >
           <div className="user-pill-info">
             <div className="user-pill-photo">
-              <img src={userInfo.profileImage} alt={userInfo.username} />
+              <img src={fixImageUrl(userInfo.profileImage)} alt={userInfo.username} />
             </div>
             <div className="user-pill-name d-none d-xl-inline-block">
               <p>{userInfo.firstname}</p>

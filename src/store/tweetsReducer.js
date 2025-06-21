@@ -27,14 +27,6 @@ function tweetsReducer(state = [], action) {
         };
       });
 
-    // case "LIKE": return state.map((tweet)=> {
-    //   if(tweet.id !== action.payload.tweet.id) return tweet;
-    //   return {
-    //     ...tweet, likes: tweet.likes.includes(action.payload.user.id)? tweet.likes.filter((item) => item !== action.payload.user.id)
-    //     : [...tweet.likes, action.payload.user.id],
-    //   }
-    // })
-
     default:
       return state;
   }

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { removeTweet } from "../store/actions";
 import Like from "./Like";
+import { fixImageUrl } from "../utils/fixImageURL";
 import "./Tweet.css";
 
 function Tweet({ tweet }) {
@@ -30,7 +31,7 @@ function Tweet({ tweet }) {
       <div className="col-xs-5 col-2 p-0">
         <img
           className="user-photo"
-          src={tweet.author.profileImage}
+          src={fixImageUrl(tweet.author.profileImage)}
           alt="user"
         />
       </div>

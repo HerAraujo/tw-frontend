@@ -1,6 +1,7 @@
 import "./LogoutModal.css";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { fixImageUrl } from "../utils/fixImageURL";
 
 function LogoutModal({ userInfo }) {
   let navigate = useNavigate();
@@ -17,7 +18,7 @@ function LogoutModal({ userInfo }) {
       <div className="logout-modal-content">
         <div className="logout-modal-user-info">
           <div className="logout-modal-user-photo">
-            <img src={userInfo.profileImage} alt={userInfo.username} />
+            <img src={fixImageUrl(userInfo.profileImage)} alt={userInfo.username} />
           </div>
           <div className="logout-modal-user-name">
             <p>{userInfo.firstname}</p>

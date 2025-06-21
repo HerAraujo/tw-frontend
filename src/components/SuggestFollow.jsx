@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./SuggestFollow.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { fixImageUrl } from "../utils/fixImageURL";
 const axios = require("axios");
 
 function SuggestFollow() {
@@ -37,7 +38,7 @@ function SuggestFollow() {
           >
             <Link to={`/${user.username}`}>
               <div className="sg-follow-info my-1">
-                <img src={user.profileImage} alt={user.username} />
+                <img src={fixImageUrl(user.profileImage)} alt={user.username} />
                 <div className="sg-follow-name">
                   <p>{user.firstname}</p>
                   <span>{`@${user.username}`}</span>

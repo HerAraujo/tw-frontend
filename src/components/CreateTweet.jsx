@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { storeTweet } from "../store/actions";
+import { fixImageUrl } from "../utils/fixImageURL";
 import "./CreateTweet.css";
 
 function CreateTweet({ handleClose }) {
@@ -64,7 +65,7 @@ function CreateTweet({ handleClose }) {
       <div className="col-xs-5 col-2 p-0">
         <img
           className="create-tweet-user-photo"
-          src={loggedUser.profileImage}
+          src={fixImageUrl(loggedUser.profileImage)}
           alt="user"
         />
       </div>

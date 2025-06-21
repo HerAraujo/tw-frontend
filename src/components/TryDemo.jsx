@@ -10,16 +10,17 @@ function TryDemo() {
 
   const handleClick = async (event) => {
     try {
+
       const response = await axios({
         method: "POST",
         url: `${process.env.REACT_APP_URL}api/token`,
         data: {
           username: "user",
-          password: "user",
+          password: "user"
         },
       },
       {
-        withCredentials: true,
+        withCredentials: true
       });
 
       dispatch(logIn(response.data.user));
